@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  
+}
+body {
+  background: #efefef;
+  /* background: #fff; */
+  overflow-x: hidden;
+}
+.navbar {
+  /* height: 80px; */
+  margin: 20px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  padding: 0.5rem;
+  background: none !important;
+}
+
+/* sticky */
+.navbar-scrolled {
+  background-color: #fff !important; /* Ubah warna sesuai kebutuhan */
+  transition: background-color 0.3s ease-in-out;
+}
+/* Warna default (putih sebelum discroll) */
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Warna setelah discroll (hitam) */
+.navbar-scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Untuk warna font setelah di-scroll atau toggle dibuka */
+.navbar-scrolled .nav-link,
+.navbar-toggled .nav-link {
+  color: #000 !important;
+}
+
+/* Navbar-toggler icon setelah toggle terbuka atau di-scroll (jadi hitam) */
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-toggled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar saat toggle diklik */
+.navbar-toggled {
+  background-color: #ffffff !important; /* Warna saat toggle terbuka */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-scrolled .nav-link {
+  color: #000 !important;
+}
+
+.container-fluid img {
+  width: 50px;
+}
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.hero {
+  background: url(img/back.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.hero::before {
+  background-color: rgba(0, 0, 0, 0.801);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.hero .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+.hero .container h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif !important;
+}
+
+/*  */
+#about .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-fluid {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.about-text {
+  align-items: center;
+}
+.about-text h2 {
+  color: #d32f2f;
+}
+/*  */
+.layanan {
+  color: #d32f2f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  line-height: 20px;
+}
+
+/*  */
+/*  */
+.card-list {
+  display: flex;
+  flex-direction: column;
+}
+.desc {
+  margin-bottom: 10px;
+}
+.desc .icon {
+  padding: 10px;
+}
+.icon i {
+  background: #d4af37;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* card */
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+}
+.card-list span {
+  font-size: 10px;
+}
+.card-img-top {
+  /* height: 230px; */
+  /* padding: 20px; */
+  object-fit: cover;
+}
+.car-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.btn {
+  background: #d32f2f;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin: 0 20px 20px 20px;
+}
+
+/*  */
+.profit h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.profit p {
+  /* text-align: justify; */
+  font-size: 15px;
+}
+
+
+
+.footer-bottom {
+  border-top: 1px solid rgb(189, 189, 189);
+}

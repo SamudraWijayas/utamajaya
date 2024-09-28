@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-lg animate__animated animate__fadeInDown"
+    >
+      <div class="container-fluid">
+        <img src="img/logoo.png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mobil">Mobil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Hubungi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+      <div
+        class="container d-flex text-center justify-content-center text-white flex-column animate__animated animate__fadeInUp"
+      >
+        <h1>Utama Jaya</h1>
+        <h1>Rental Mobil Lampung</h1>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about section-padding pt-5 pb-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12" data-aos="fade-up">
+            <div class="about-img">
+              <img alt="" class="img-fluid" src="img/1.jpg" />
+            </div>
+          </div>
+          <div
+            class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-3"
+            data-aos="fade-right"
+          >
+            <div class="about-text">
+              <h2>UTAMA JAYA RENT CAR</h2>
+              <p style="text-align: justify">
+                CV. UTAMA JAYA RENT CAR adalah sebuah usaha yang bergerak di
+                bidang jasa transportasi di Lampung yang memberikan berbagai
+                solusi transportasi meliputi persewaan mobil, paket wisata, drop
+                off dan pengiriman barang. CV. Utama Jaya Rent Car didirikan p
+                ada tahun 2014 dan saat ini memiliki 22 unit armada dengan
+                cakupan Pelayanan untuk wilayah Provinsi Lampung. Untuk
+                memberikan kepuasaan kepada setiap pelanggan armada yang kami
+                sediakan selalu dalam kondisi prima, karenanya perawatan rutin
+                wajib dilakukan untuk menjamin keamanan dan kenyamanan konsumen
+                selama menggunakan Pelayanan kami. Armada yang kami miliki
+                maksimal berusia 5 tahun dan secara reguler melakukan penambahan
+                armada keluaran terbaru untuk peremajaan serta menjadi solusi
+                kebutuhan konsumen akan mobil berkualitas dengan berbagai
+                pilihan brand dan model.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Layanan -->
+
+    <section class="pt-4 pb-4" style="background-color: aliceblue">
+      <div class="container">
+        <div class="row justify-content-around pt-5 pb-4 align-items-center">
+          <div class="col-md-6">
+            <span class="layanan">LAYANAN</span>
+            <h1>Mitra Terbaik Perjalanan Anda</h1>
+            <p>
+              Kami adalah mitra yang dapat Anda andalkan dalam setiap
+              perjalanan. Dengan dedikasi untuk memberikan kenyamanan, keamanan,
+              dan kemudahan, kami hadir untuk memastikan setiap momen perjalanan
+              Anda penuh dengan pengalaman tak terlupakan. Dengan kami,
+              perjalanan Anda tidak hanya sekadar sebuah tujuan, tetapi sebuah
+              petualangan yang menyenangkan.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div
+              id="serviceCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="satu">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Instansi Pemerintah</h5>
+                            <p class="card-text">
+                              Layanan transportasi yang aman dan efisien untuk
+                              kegiatan resmi pemerintahan.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Acara Pribadi</h5>
+                            <p class="card-text">
+                              Untuk pernikahan, wisuda, acara wisata keluarga,
+                              dan acara khusus lainnya.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Antar Jemput Bandara</h5>
+                            <p class="card-text">
+                              Antar-jemput ke bandara dengan tepat waktu dan
+                              profesional.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Dalam Kota & Luar Kota</h5>
+                            <p class="card-text">
+                              Baik perjalanan di dalam kota maupun antar kota.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="dua">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Instansi Pemerintah</h5>
+                            <p class="card-text">
+                              Layanan transportasi yang aman dan efisien untuk
+                              kegiatan resmi pemerintahan.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Acara Pribadi</h5>
+                            <p class="card-text">
+                              Untuk pernikahan, wisuda, acara wisata keluarga,
+                              dan acara khusus lainnya.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Antar Jemput Bandara</h5>
+                            <p class="card-text">
+                              Antar-jemput ke bandara dengan tepat waktu dan
+                              profesional.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="kart">
+                          <div class="card-body">
+                            <h5 class="card-title">Dalam Kota & Luar Kota</h5>
+                            <p class="card-text">
+                              Baik perjalanan di dalam kota maupun antar kota.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#serviceCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#serviceCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <!-- <span
+                class="carousel-control-next-icon bg-dark"
+                aria-hidden="true"
+                style="margin-left: 60px !important;"
+              ></span> -->
+              <i class="fa-solid fa-chevron-right"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container py-5" id="mobil">
+      <h1 class="text-center" data-aos="fade-up">
+        Pilih Unit Sesuai Kebutuhanmu
+      </h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <!--  -->
+        <div class="col" data-aos="fade-up">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">New Avanza</h5>
+            </div>
+            <img
+              src="img/gr_0013_2-silver-metallic_optimized.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="text d-flex justify-content-around">
+              <h3>Rp 1.250.000/day</h3>
+              <button
+                class="btn"
+                onclick="sendMessage(this)"
+                data-photo="Pajero"
+                data-price="Rp 1.250.000/day"
+              >
+                Pilih Mobil
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-5" style="background-color: aliceblue">
+      <h1 class="" style="padding: 0 40px; font-size: 30px" data-aos="fade-up">
+        KEUNTUNGAN MENYEWA DI UTAMA JAYA RENT CAR
+      </h1>
+      <div class="container">
+        <div class="row justify-content-around pt-4">
+          <div class="col-md-7 profit">
+            <h3 class="mt-3">Kondisi Armada Prima</h3>
+            <p>
+              Setiap armada di tempat kami selalu dilakukan pemeriksaan dan
+              perawatan secara rutin untuk menjamin keamanan dan kenyamanan
+              pelanggan. Perawatan harian dilakukan oleh mekanik kami yang
+              terlatih dan perawatan bulanan dilakukan oleh dealer resmi (Auto
+              2000).
+            </p>
+          </div>
+          <div class="col-md-5 profit">
+            <h3 class="mt-3">Harga Yang Kompetitif</h3>
+            <p>
+              Faktor harga merupakan salah satu fokus dimana kami selalu
+              bersaing untuk memberikan harga sewa yang kompetitif.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-md-5 profit">
+            <h3 class="mt-3">Mobil Pengganti</h3>
+            <p>
+              Apabila terjadi suatu halangan (misalnya kerusakan mobil,
+              kecelakaan, dll) maka kami akan segera menggantikan dengan armada
+              sekelas.
+            </p>
+          </div>
+          <div class="col-md-7 profit">
+            <h3 class="mt-3">Driver Yang Berpengalaman</h3>
+            <p>
+              Setiap Driver di CV. Utama Jaya Rent Car sudah terlatih dan
+              mengerti bagaimana memberikan Pelayanan yang nyaman mulai dari
+              pengetahuan akan kondisi dan jalan suatu daerah, cara berkendara
+              yang tenang dan kemampuan komunikasi yang ramah ke setiap
+              pelanggan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pastikan untuk menyertakan Bootstrap CSS dan JS -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

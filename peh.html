@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Car Rental Service</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Reset margin dan padding untuk semua elemen */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Gaya dasar untuk elemen body */
+      body {
+        font-family: "Roboto", sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+        line-height: 1.6;
+      }
+
+      /* Styling untuk container */
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      /* Styling untuk header */
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+      }
+
+      header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      header nav ul li {
+        margin: 0 15px;
+      }
+
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+
+      header nav ul li a:hover {
+        color: #f4b400;
+      }
+
+      /* Styling untuk Hero Section */
+      .hero {
+        background: url("hero-background.jpg") no-repeat center center/cover;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+      .cta-btn {
+        background: #f4b400;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background: #d49400;
+      }
+
+      /* Styling untuk Layanan */
+      .services {
+        padding: 50px 0;
+        background-color: #fff;
+      }
+
+      .services h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .services ul {
+        list-style-type: none;
+        text-align: center;
+      }
+
+      .services ul li {
+        font-size: 1.2rem;
+        margin: 15px 0;
+      }
+
+      /* Styling untuk Galeri */
+      .gallery {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+      }
+
+      .gallery h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .car-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .car-item {
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 5px;
+        width: 300px;
+      }
+
+      .car-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .car-item h3 {
+        margin-top: 15px;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      /* Styling untuk Tentang Kami */
+      .about {
+        padding: 50px 0;
+        background-color: #fff;
+      }
+
+      .about h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        max-width: 800px;
+        line-height: 1.8;
+      }
+
+      /* Styling untuk Kontak */
+      .contact {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+      }
+
+      .contact h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .contact form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact form label {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+
+      .contact form input,
+      .contact form select {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .contact form input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact form input[type="submit"]:hover {
+        background-color: #555;
+      }
+
+      /* Styling untuk Footer */
+      footer {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      /* Responsive Styling */
+      @media (max-width: 768px) {
+        header nav ul {
+          flex-direction: column;
+        }
+
+        .car-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero h2 {
+          font-size: 2.5rem;
+        }
+
+        .cta-btn {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Rental Mobil Perusahaan</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Rental Mobil dengan Driver Profesional</h2>
+        <p>Layanan eksklusif untuk perkantoran, instansi, dan BUMN.</p>
+        <a href="#contact" class="cta-btn">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Layanan Kami</h2>
+        <ul>
+          <li>Mobil Premium dengan Driver Berpengalaman</li>
+          <li>Paket Sewa Harian dan Mingguan</li>
+          <li>Pelayanan Khusus Perusahaan</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Galeri Mobil</h2>
+        <div class="car-grid">
+          <div class="car-item">
+            <img src="mobil1.jpg" alt="Mobil 1" />
+            <h3>Mobil A - Rp. 1.500.000/hari</h3>
+          </div>
+          <div class="car-item">
+            <img src="mobil2.jpg" alt="Mobil 2" />
+            <h3>Mobil B - Rp. 2.000.000/hari</h3>
+          </div>
+          <!-- Tambahkan mobil lainnya -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <p>
+          PT. Utama Jaya Bersinergi adalah perusahaan rental mobil profesional
+          yang melayani instansi pemerintah, perusahaan swasta, dan BUMN dengan
+          layanan driver eksklusif.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form action="submit_order.php" method="POST">
+          <label for="company">Nama Perusahaan:</label>
+          <input type="text" id="company" name="company" required />
+
+          <label for="car">Jenis Mobil:</label>
+          <select id="car" name="car" required>
+            <option value="mobil1">Mobil A</option>
+            <option value="mobil2">Mobil B</option>
+            <!-- Tambahkan pilihan mobil lainnya -->
+          </select>
+
+          <label for="date">Tanggal Pemakaian:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="contact">Nomor Kontak:</label>
+          <input type="tel" id="contact" name="contact" required />
+
+          <input type="submit" value="Pesan Sekarang" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 PT. Utama Jaya Bersinergi</p>
+      </div>
+    </footer>
+  </body>
+</html>
