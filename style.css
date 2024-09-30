@@ -82,6 +82,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
+  height: 100vh;
 }
 
 .hero .container {
@@ -213,6 +214,7 @@ body {
   .about-text h2 {
     text-align: center !important;
     margin-top: 20px;
+    font-size: 20px;
   }
   .lay h1 {
     margin-top: 10px;
@@ -226,9 +228,9 @@ body {
     text-align: center;
     font-size: 20px;
   }
-  .tung {
+  .keuntungan {
     text-align: center;
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .contat-text {
     text-align: center;
