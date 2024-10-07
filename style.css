@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: #efefef;
+  background: #eee;
   /* background: #fff; */
   overflow-x: hidden;
 }
@@ -125,6 +125,12 @@ body {
 }
 .card-text {
   line-height: 20px;
+}
+.card{
+  padding: 10px;
+}
+.card img{
+  height:190px;
 }
 
 /*  */
